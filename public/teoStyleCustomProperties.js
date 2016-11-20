@@ -9,7 +9,7 @@
 
             function cssCustomProperties(elm, css) {
                 _.forIn(css, function(value, prop) {
-                    if (value) {
+                    if (value !== undefined) {
                         elm.style.setProperty(prop, value);
                     } else {
                         elm.style.removeProperty(prop);
