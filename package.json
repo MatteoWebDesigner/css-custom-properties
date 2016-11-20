@@ -2,24 +2,26 @@
   "name": "css-custom-properties",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
+  "dependencies": {
+    "angular-style-custom-properties": "^1.0.0"
+  },
+  "devDependencies": {
+    "copyfiles": "^1.0.0",
+    "http-server": "^0.9.0"
+  },
   "scripts": {
-    "start": "http-server public -o"
+    "start": "copyfiles node_modules/angular-style-custom-properties/style-custom-properties.js public; http-server public -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MatteoWebDesigner/css-custom-properties.git"
   },
-  "author": "MatteoWebDesigner",
+  "author": "matteowebdesigner",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MatteoWebDesigner/css-custom-properties/issues"
   },
-  "homepage": "https://github.com/MatteoWebDesigner/css-custom-properties#readme",
-  "dependencies": {
-    "angular-style-custom-properties": "^1.0.0"
-  },
-  "devDependencies": {
-    "http-server": "^0.9.0"
-  }
+  "homepage": "https://github.com/MatteoWebDesigner/css-custom-properties#readme"
 }
