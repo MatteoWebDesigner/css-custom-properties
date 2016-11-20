@@ -1,0 +1,19 @@
+{
+  "name": "css-custom-properties",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server public/ -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatteoWebDesigner/css-custom-properties.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatteoWebDesigner/css-custom-properties/issues"
+  },
+  "homepage": "https://github.com/MatteoWebDesigner/css-custom-properties#readme"
+}
