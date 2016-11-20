@@ -4,16 +4,22 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "http-server public/ -o"
+    "start": "http-server public -o"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MatteoWebDesigner/css-custom-properties.git"
   },
-  "author": "",
+  "author": "MatteoWebDesigner",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MatteoWebDesigner/css-custom-properties/issues"
   },
-  "homepage": "https://github.com/MatteoWebDesigner/css-custom-properties#readme"
+  "homepage": "https://github.com/MatteoWebDesigner/css-custom-properties#readme",
+  "dependencies": {
+    "angular-style-custom-properties": "^1.0.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
 }
