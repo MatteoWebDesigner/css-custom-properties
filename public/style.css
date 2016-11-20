@@ -1,3 +1,8 @@
+:root {
+    
+}
+
+/* media */
 .graph {
   margin: 0 auto;
   width: 50%;
@@ -28,4 +33,17 @@
     height: 100%;
     width: var(--graph-value);
   }
+}
+
+
+/* runtime */
+.runtime {
+    --value: 0;
+    
+    width: calc(var(--value) * 1%);
+    height: 50px;
+    background: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
