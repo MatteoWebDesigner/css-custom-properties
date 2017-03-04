@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html ng-app='app'>
 
-  <head>
+<head>
     <link rel="stylesheet" href="style.css">
-  </head>
+    <link rel="stylesheet" href="button/style.css">
+    <link rel="stylesheet" href="buttonGroup/style.css">
+</head>
 
-  <body>
+<body>
     <h1>CSS Custom properties benefits</h1>
-    
+
     <h2>Use value on different properties when media query change</h2>
     <p>Decide which properties should use the css custom properties</p>
     <app-media></app-media>
-    
+
     <h2>Evluated at run-time</h2>
     <p>change input value to see even the bar changing size</p>
     <app-run-time></app-run-time>
-    
+
     <h2>Cascade</h2>
     <p>You can share css custom properties with your children</p>
     <app-cascade></app-cascade>
-    
+
     <h2>Global Theme</h2>
     <p>share variable and change dynamically, select |html| root tag and you will see :root</p>
     <button type="button" class="btn">themable button</button>
     <div class="panel">themable panel</div>
-    
+
+    <h2>Define Content break point in css</h2>
+    <app-button-group>
+        <app-button type="button">long text text text</app-button>
+        <app-button type="button">long text text text</app-button>
+    </app-button-group>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
     <script src="node_modules/angular-style-custom-properties/style-custom-properties.js"></script>
     <script src="app.js"></script>
@@ -32,6 +41,8 @@
     <script src="media/component.js"></script>
     <script src="runtime/component.js"></script>
     <script src="cascade/component.js"></script>
-  </body>
+	<script src="button/component.js"></script>
+    <script src="buttonGroup/component.js"></script>
+</body>
 
 </html>

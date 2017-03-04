@@ -1,0 +1,22 @@
+.app-c-button-group {
+  --button-group-content-query-px: 600;
+  display: block;
+  width: 100%;
+}
+
+.app-c-button-group.is-content-query .app-c-button {
+  width: 100%;
+}
+
+.app-c-button-group.is-content-query .app-c-button:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* temp fix */
+app-button-group app-button {
+    display: block;
+}
+app-button-group app-button:not(:last-child) {
+    
+    margin-bottom: 10px;
+}
